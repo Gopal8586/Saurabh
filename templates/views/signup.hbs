@@ -1,0 +1,199 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/templates/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <title>Registration page</title>
+
+
+    <style>
+        
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    background-color: rgb(179, 184, 206);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    flex-direction: column;
+    background-color: rgba(61, 89, 214, 0.37);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.left-form {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 20px;
+}
+
+h1 {
+    font-family: "Raleway";
+}
+
+.name,
+.pass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+.first-name,
+.last-name,
+
+.mail,
+.phone,
+.password,
+.confirmpassword {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5vh;
+    font-family: "Roboto";
+    font-weight: 600;
+}
+
+input {
+    background: transparent;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    font-size: 18px;
+}
+
+.img {
+    display: flex;
+}
+
+img {
+    width: 380px;
+    height: 550px;
+}
+
+#submit {
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-family: "Jost";
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#submit:hover {
+    background-color: darkcyan;
+    border: 2px solid white;
+}
+
+a {
+    font-weight: bolder;
+}
+
+.login span {
+    font-family: "Raleway";
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- <h1>Registration Form</h1> -->
+    <div class="main-form">
+        <form action="/Information" method="post">
+            <div class="container">
+                <div class="main">
+                    <div class="left">
+                        <h1>Registration Form</h1>
+                        <div class="left-form">
+                            <div class="name">
+                                <div class="first-name">
+                                    <label for="first-name">First Name</label>
+                                    <input name="firstname" id="first-name" type="text" size="20" />
+                                </div>
+                                <div class="last-name">
+                                    <label for="last-name">Last Name</label>
+                                    <input name="lastname" id="last-name" type="text" size="20" />
+                                </div>
+                            </div>
+
+                            <div class="mail">
+                                <label for="mail">Email</label>
+                                <input name="email" id="mail" type="text" size="52" />
+                            </div>
+                            <div class="phone">
+                                <label for="Phone">Phone</label>
+                                <input name="phone" id="Phone" type="text" size="52" />
+                            </div>
+
+                            <div class="pass">
+                                <div class="password">
+                                    <label for="password">Password</label>
+                                    <input name="password" id="password" type="text" />
+                                </div>
+                                <div class="confirmpassword">
+                                    <label for="confirmpassword">Confirm Password</label>
+                                    <input name="confirmpassword" id="confirmpassword" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <input id="submit" type="submit" class="btnregister" value="SignUp" />
+                        <div class="login">
+                            <span>Already Have Account! <a href="/login">Login</a></span>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="img"><img src="/Images/Signup/Signup.png" alt="" /></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

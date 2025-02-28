@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Refund Policy - VegBites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/Refund.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Refund Policy</h1>
+        </header>
+
+        <section class="policy">
+            <p>At VegBites, we strive to provide our customers with the best dining experience, whether you visit us in
+                person or order online. Our commitment to quality extends to our refund policy, ensuring a seamless and
+                transparent process for our customers.</p>
+
+            <h2>Eligibility for Refunds</h2>
+            <ul>
+                <li><strong>Incorrect Order:</strong> If you receive an incorrect item or order, please contact us
+                    within 24 hours of receiving your order, and we will arrange for the correct item to be sent or a
+                    refund to be processed.</li>
+                <li><strong>Unsatisfactory Quality:</strong> If the quality of the food does not meet our high
+                    standards, notify us within 12 hours of receiving your order. We may request further details and
+                    offer a refund or replacement if applicable.</li>
+                <li><strong>Delayed Delivery:</strong> If your order is delivered more than 60 minutes beyond the
+                    scheduled time, you may be eligible for a full or partial refund. Contact us to discuss.</li>
+                <li><strong>Cancellations:</strong> Orders can be canceled within 10 minutes of placing them for online
+                    orders.</li>
+            </ul>
+
+            <h2>How to Request a Refund?</h2>
+            <p>Email us at <a href="mailto:your-Shivitripathi2511@gmail.com">Shivitripathi2511@gmail.com</a> or call us
+                at <a href="tel:9369874073">9369874073</a>. Provide your order details, and we will
+                respond within 1-2 business days.</p>
+
+            <h2>Refund Process</h2>
+            <p>Once your refund is approved, it will be processed to the original payment method. Refunds typically take
+                5-7 business days to reflect in your account.</p>
+
+            <h2>Non-refundable Items</h2>
+            <p>Gift cards, vouchers, and discounted items are non-refundable unless there is an issue with the order.
+            </p>
+        </section>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <span>Can I cancel my order after placing it?</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You can cancel your order within 10 minutes of placing it for online orders. Unfortunately, once
+                        the food preparation begins, the order cannot be canceled.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <span>How long does it take to process a refund?</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Refunds are typically processed within 5-7 business days, depending on your payment method and
+                        provider.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <span>What should I do if I receive an incorrect order?</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Contact our customer service within 24 hours of receiving your order, and we will arrange for the
+                        correct item to be delivered or issue a refund.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <span>My food was delivered late. Am I eligible for a refund?</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>If your order was delivered more than 60 minutes beyond the estimated delivery time, you may be
+                        eligible for a full or partial refund.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <span>Can I return food if I don’t like it?</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We offer refunds or replacements if the food quality does not meet our standards. Please notify
+                        us within 12 hours of receiving your order.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('.icon');
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+                icon.textContent = "+";
+            } else {
+                answer.style.display = "block";
+                icon.textContent = "-";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/Images/Menu/Menu.png" type="image/x-icon">
+    <title>Vegbite! Menu</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+    <link rel="stylesheet" href="/css/Menu.css" />
+   
+</head>
+
+<body>
+    <!--mouse  follower-->
+
+    <div class="cursor"></div>
+
+    <!--mouse  follower-->
+    <div class="back">
+        <div class="back-btn">
+        <a href="/vegbite">
+            <img class="back-button" src="/Images/Menu/up arrow.png" alt="" />
+            <a href="/vegbite">Back to Home</a>
+        </a>
+    </div>
+
+        <div class="cart-icon">
+            <a href="cart2.html">
+                <i class="fa fa-shopping-cart"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+    </div>
+    <section id="product">
+        <div class="container">
+            <h1 style="align-items: center; display: flex; justify-content: center;font-size: 100px; color: brown;margin-bottom: 20px;">VegBites! Menu</h1>
+            <div class="controls">
+                <button type="button" class="control" data-filter="all">ALL</button>
+                <button type="button" class="control" data-filter=".Main-Course">
+                    Main-Course
+                </button>
+                <button type="button" class="control" data-filter=".Bread">
+                    Bread
+                </button>
+                <button type="button" class="control" data-filter=".Sides">
+                    Sides
+                </button>
+                <button type="button" class="control" data-filter=".Desserts">
+                    Desserts
+                </button>
+                <button type="button" class="control" data-filter=".Beverages">
+                    Beverages
+                </button>
+
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="" id="search-item" placeholder="Search Items" onkeyup="search()" />
+                </div>
+            </div>
+            <div class="products" id="products">
+                <div class="mix Main-Course palak-paneer">
+                    <img src="/Images/Menu/Main-course/Palak_Paneer.png" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>palak-paneer</h3>
+                            <h3>Main-course</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">170 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Bread">
+                    <img src="/Images/Menu/Bread/Naan_Roti.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>naan roti</h3>
+                            <h3>Bread</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">50/- Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Beverages">
+                    <img src="/Images/Menu/Beverages/chai.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>Masala Chai</h3>
+                            <h3>Beverages</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">20/- Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Sides">
+                    <img src="/Images/Menu/Sides/cheeseburge.jpeg" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3> cheese Burger</h3>
+                            <h3>Sides</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">150 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Desserts">
+                    <img src="/Images/Menu/Desserts/Rasmalai.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>Rasmalai</h3>
+                            <h3>Desserts</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">170 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Beverages">
+                    <img src="/Images/Menu/Beverages/coffe.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>coffee</h3>
+                            <h3>Beverages</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">140 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Beverages">
+                    <img src="/Images/Menu/Beverages/lemonate.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>Lemonate</h3>
+                            <h3>Beverages</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">120 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Main-Course">
+                    <img src="/Images/Menu/Main-course/paneerbuuter.jpg" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>Paneer butter masala</h3>
+                            <h3>Main-course</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">170 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Main-Course Malai_kofta">
+                    <img src="/Images/Menu/Main-course/Malai_kofta.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>Malai kofta</h3>
+                            <h3>Main-course</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">180 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Main-Course">
+                    <img src="/Images/Menu/Main-course/Dosa.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>Paper Dosa</h3>
+                            <h3>Main-course</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">100 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Beverages">
+                    <img src="/Images/Menu/Beverages/smoothiesmangotang.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>mango smoothie</h3>
+                            <h3>Beverages</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">140 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Bread">
+                    <img src="/Images/Menu/Bread/Missi_Roti.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>Missi Roti</h3>
+                            <h3>Bread</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">50/- Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mix Bread">
+                    <img src="/Images/Menu/Bread/Tava_roti.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>Tava Roti</h3>
+                            <h3>Bread</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">10/- Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Bread">
+                    <img src="/Images/Menu/Bread/Puri.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>Puri</h3>
+                            <h3>Bread</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">10/- Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Sides">
+                    <img src="/Images/Menu/Sides/Lasanga.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>
+                                Lasagna
+                            </h3>
+                            <h3>Sides</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">170 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Beverages Cold_Coffee">
+                    <img src="/Images/Menu/Beverages/Cold_Coffee.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>
+                              cold coffee
+                            </h3>
+                            <h3>Beverages</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">180 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Sides Manchurian">
+                    <img src="/Images/Menu/Sides/Manchurian.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>Manchurian</h3>
+                            <h3>Sides</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">130 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Sides Pizza">
+                    <img src="/Images/Menu/Sides/Pizza.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>Pizza</h3>
+                            <h3>Sides</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">150 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix  Sides Tikka">
+                    <img src="/Images/Menu/Sides/Paneer_Tikka.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>Paneer Tikka</h3>
+                            <h3>Sides</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">120 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Desserts Kheer">
+                    <img src="/Images/Menu/Desserts/Kheer.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>Kheer</h3>
+                            <h3>Desserts</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">180 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Desserts Cake">
+                    <img src="/Images/Menu/Desserts/Gulab_Jamun.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>Gulab Jamun</h3>
+                            <h3>Desserts</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">20 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Desserts Cake">
+                    <img src="/Images/Menu/Desserts/Cake.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>Cake</h3>
+                            <h3>Desserts</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">80 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Main-Course Idli">
+                    <img src="/Images/Menu/Main-course/idli.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>Idli sambhar chutni</h3>
+                            <h3>Main-course</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">140 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Main-Course Litti">
+                    <img src="/Images/Menu/Main-course/Litti_chokha.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>Litti chokha</h3>
+                            <h3>Main-course</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">130 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Main-Course daalmakhni">
+                    <img src="/Images/Menu/Main-course/daalmakhn.jpeg" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>Daal Makhni</h3>
+                            <h3>Main-course</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">140 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Beverages Water">
+                <img src="/Images/Menu/Beverages/Water.png" alt="" />
+
+                <div class="details">
+                    <div class="detail">
+                        <h3>water</h3>
+                        <h3>Beverages</h3>
+                    </div>
+                    <div class="money">
+                        <div class="price">10/- Rupees</div>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+                <div class="mix Desserts Pastry">
+                    <img src="/Images/Menu/Desserts/Pastry.png" alt="" />
+
+                    <div class="details">
+                        <div class="detail">
+                            <h3>Pastry</h3>
+                            <h3>Desserts</h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">70 Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix Desserts">
+                    <img src="/Images/Menu/Desserts/Ice_Cream.png" alt="" />
+    
+                    <div class="details">
+                        <div class="detail">
+                            <h3>ice-cream</h3>
+                            <h3>Desserts</h3>
+                            <h3></h3>
+                        </div>
+                        <div class="money">
+                            <div class="price">120/- Rupees</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- javascripts -->
+<script src="/Javascript/mixitup.min.js"></script>
+<script src="/Javascript/menu.js"></script>
+</body>
+
+</html>

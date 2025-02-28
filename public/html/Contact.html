@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <title>Contact Form</title>
+</head>
+
+<body>
+
+    <div class="back">
+        <a href="/vegbite">
+            <img class="back-button" src="/Images/Menu/up arrow.png" alt="" />
+            <a href="/vegbite">Back to Home</a>
+        </a>
+    </div>
+
+    <div class="body">
+        <h1>Contact us</h1>
+        <p>Have questions or need assistance? Reach out to us—we're here to help!</p>
+
+        <div class="container">
+            <div class="left">
+                <div class="address">
+                    <i class="fa fa-map-marker" style="color: black"></i>
+                    <div class="first">
+                        <h3>Address</h3>
+                        <span class="main">House no-232 Tilak Nagar allhapur</span>
+                    </div>
+                </div>
+                <div class="phone">
+                    <i class="fa-solid fa-phone" style="color: black"></i>
+                    <div class="first">
+                       <h3>Phone</h3>
+                        <span>9369874073</span>
+                    </div>
+                </div>
+                <div class="email">
+                    <i class="fa fa-envelope" style="color: black"></i>
+                    <div class="first">
+                       <h3>Email</h3>
+                        <span>shivitripathi2511@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <form action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="access_key" value="019e9b2a-4f03-462d-93ff-a61d6387411d">
+                <div class="right">
+                    <h2>Send Message</h2>
+                    <div class="name">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" placeholder="Enter Your Name" size="40" />
+                    </div>
+                    <div class="emailsend">
+                        <label for="email">Email</label>
+
+                        <input type="text" name="email" placeholder="Enter Your Name" size="40" />
+                    </div>
+                    <div class="message">
+                    <label for="message">Message</label>
+
+                        <input type="text" name="message" placeholder="Enter Your Name" size="40" />
+                    </div>
+
+                    <button type="submit"> Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

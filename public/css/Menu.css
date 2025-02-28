@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --container: 144rem;
+  --m-auto: 0 auto;
+  --white: #fff;
+  --btn: #c70039;
+  --btn-active: #da1d1d;
+}
+
+/* Cursor css */
+
+.cursor {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #c70039;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, background-color 0.3s;
+  animation: glow 1s infinite alternate;
+  z-index: 10;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px 5px #c70039;
+  }
+
+  100% {
+    box-shadow: 0 0 20px 10px whitesmoke;
+  }
+}
+
+/* cursor end */
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  /* background-color: black; */
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.cart-icon {
+  position: relative;
+  top: 50px;
+  right: 40px;
+}
+
+.cart-count {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: -10px; /* Adjust as needed */
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: 12px;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.back-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.back-button {
+  height: 30px;
+  width: 30px;
+  rotate: 270deg;
+  margin-left: 50px;
+}
+
+.back-button:hover {
+  scale: 1.2;
+}
+
+.back a {
+  color: black;
+  font-size: 18px;
+}
+
+.container {
+  max-width: var(--container);
+  margin: var(--m-auto);
+  padding: 0 2rem;
+}
+
+#product {
+  padding: 3rem 0;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.control {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  margin: 1rem 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 2.5rem;
+  font-weight: 600;
+  color: var(--white);
+  background: var(--btn);
+  cursor: pointer;
+}
+
+.control:hover {
+  scale: 1.1;
+  border: 2px solid #fff;
+  background-color: burlywood;
+}
+
+.control.mixitup-control-active {
+  background: var(--btn-active);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 2px solid red;
+  padding: 8px;
+  border-radius: 25px;
+  margin-left: 50px;
+}
+
+.search i {
+  padding-left: 5px;
+}
+
+.search input {
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.mix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 350px;
+  height: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  transition: transform 0.3s ease;
+  border-radius: 10%;
+  border: 2px solid whitesmoke;
+}
+
+.mix img {
+  width: 200px;
+  height: 200px;
+  justify-items: center;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+}
+
+/* Image Flex */
+
+.palak-paneer img{
+  width: 350px;
+  height: 200px;
+}
+.Manchurian img{
+  width: 300px;
+  height: 200px;
+}
+.Pizza img{
+  width: 300px;
+  height: 200px;
+}
+.Kheer img{
+  width: 350px;
+  height: 200px;
+}
+.Cake img{
+  width: 350px;
+  height: 200px;
+}
+.Idli img{
+  width: 320px;
+  height: 200px;
+}
+.Litti img{
+  width: 320px;
+  height: 200px;
+}
+.daalmakhni img{
+  width: 350px;
+  height: 200px;
+}
+.Water img{
+  width: 150px;
+  height: 200px;
+}
+
+.Malai_kofta img{
+  width: 350px;
+  height: 200px;
+}
+.Cold_Coffee img{
+  width: 130px;
+  height: 200px;
+}
+.Pastry img{
+  width: 350px;
+  height: 200px;
+}
+.Tikka img{
+  width: 300px;
+  height: 200px;
+}
+
+
+
+
+.details {
+  width: 100%;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.money {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.money button {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: orange;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: bolder;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+.mix:hover {
+  transform: scale(1.05);
+}

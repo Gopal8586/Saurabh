@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-qrcode/0.14.0/jquery.qrcode.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+        }
+        .payment-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .payment-methods {
+            margin-top: 20px;
+        }
+        .payment-option {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+        .payment-option h2 {
+            margin-top: 0;
+            color: #444;
+        }
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .payment-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .payment-button:hover {
+            background-color: #45a049;
+        }
+        .qr-code {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .cancel-button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .cancel-button:hover {
+            background-color: #e53935;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h1>Payment Options</h1>
+        <div id="cart-totals"></div>
+
+        <div class="payment-methods">
+            <div class="payment-option">
+                <h2>Credit/Debit Card</h2>
+                <input type="text" id="card-number" placeholder="Card Number" required>
+                <input type="text" id="card-name" placeholder="Card Holder Name" required>
+                <input type="text" id="expiry-date" placeholder="MM/YY" required>
+                <input type="text" id="cvv" placeholder="CVV" required>
+                <button id="pay-with-card" class="payment-button">Pay with Card</button>
+            </div>
+
+            <div class="payment-option">
+                <h2>UPI Payment</h2>
+                <input type="text" id="upi-id" placeholder="example@upi" required>
+                <button id="pay-with-upi" class="payment-button">Pay with UPI</button>
+            </div>
+
+            <div class="payment-option">
+                <h2>QR Code Payment</h2>
+                <button id="generate-qr" class="payment-button">Generate QR Code</button>
+                <div id="qr-code" class="qr-code"></div>
+            </div>
+        </div>
+
+        <button id="cancel-button" class="cancel-button">Cancel</button>
+    </div>
+
+    <script src="/Javascript/checkout.js"></script>
+</body>
+</html>

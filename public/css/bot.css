@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    position: relative;
+}
+#chat-box {
+    border: 1px solid #ccc;
+    height: 350px; /* Adjusted height */
+    overflow-y: auto;
+    padding: 10px;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Added rounded corners */
+    z-index: 1;
+}
+.user-message {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    max-width: 60%;
+}
+.bot-message {
+    background-color: orange;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    max-width: 60%;
+}
+#user-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Added rounded corners */
+}
+#send-button {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 5px; /* Added rounded corners */
+}
+#chat-container {
+    display: none;
+    position: fixed;
+    bottom: 13%;
+    right: 4%;
+    width: 25%; /* Adjusted width */
+    border: 1px solid #ccc;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: all 0.3s ease; /* Animation */
+    border-radius: 5px; /* Added rounded corners */
+}
+#chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Animation for icon */
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+    border-top-left-radius: 5px; /* Added rounded corners */
+    border-top-right-radius: 5px; /* Added rounded corners */
+}
+#language {
+    position: relative; /* Added for positioning */
+}
+#language-selector {
+    position: absolute;
+    top: 30px; 
+    left: -10px; 
+    display: none; 
+    background: blakc; 
+    border: 1px solid transparent; 
+    border-radius: 5px; 
+    z-index: 10; 
+}
+#language-selector select {
+    border: none; 
+    padding: 5px; 
+    width: 100%; 
+    border: 1px solid transparent; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+#language-icon {
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer;
+}
